@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Sans-Pro';
+  src: url("../fonts/source-sans-pro/SourceSansPro-Regular.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #eeeeee;
+  font-family: 'Sans-Pro';
+}
+
+label {
+  display: block;
+  position: relative;
+  color: #8A9EAD;
+  font-size: 14px;
+}
+
+input {
+  display: block;
+  position: relative;
+  margin-top: 8px;
+  width: 100%;
+  border: none;
+  color: #1D2226 !important;
+  border-bottom: .5px solid #8A9EAD;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 0px;
+}
+
+input:focus {
+  border-bottom: .5px solid #1D2226;
+}
+
+.container {
+  position: absolute;
+  width: 375px;
+  height: 812px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background: #fff;
+  border: 1px solid #8A9EAD;
+  border-radius: 20px;
+}
+
+.container .logo {
+  position: absolute;
+  display: block;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 100px;
+}
+
+.container .login {
+  position: relative;
+  margin-top: 248px;
+  margin-left: 40px;
+  display: block;
+  color: #1B1B1B;
+}
+
+.container .login::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #1B1B1B;
+}
+
+.container .email {
+  position: relative;
+  width: 100%;
+  padding: 0px 40px;
+  margin-top: 0px;
+}
+
+.container .email label {
+  margin-top: 72px;
+}
+
+.container .password {
+  position: relative;
+  width: 100%;
+  padding: 0px 40px;
+  margin-top: 0px;
+}
+
+.container .password label {
+  margin-top: 32px;
+}
+
+.container .password a {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #8A9EAD;
+  height: 12px;
+  margin-top: 15px;
+  text-decoration: none;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.container .password a:hover {
+  color: #1D2226;
+}
+
+.container a.button {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 231px;
+  height: 52px;
+  background: #1B1B1B;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 30px;
+  line-height: 52px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.container a.button:hover {
+  background: #353535;
+}
+
+.container p {
+  color: #8A9EAD;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 21px;
+  height: 14px;
+}
+
+.container .media {
+  height: 54px;
+  width: calc( 54px * 3 + 16px *2);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 28px;
+}
+
+.container .media .ellipse {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: .5px solid #8A9EAD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.container .media .ellipse:hover {
+  background: #e6e6e6;
+}
+
+.container .media .ellipse img {
+  height: 23px;
+}
+
+.container p a {
+  color: #1D2226;
+  text-decoration: none;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  margin-left: 3px;
+  font-size: 14px;
+}
+
+.container p a:hover {
+  color: #8A9EAD;
+}
+/*# sourceMappingURL=style.css.map */
